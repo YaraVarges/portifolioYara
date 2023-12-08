@@ -8,6 +8,7 @@ Meu portfólio pessoal destacando projetos e habilidades em desenvolvimento web.
   Um site para criar senhas robustas com facilidade...
 - **Votos & Versos:**
   Site do grupo musical Votos & Versos...
+  E muito mais.
 ## Habilidades
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
