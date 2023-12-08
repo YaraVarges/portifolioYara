@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
   ];
 
+
   function addProjects() {
     const projectContainer = document.querySelector("#projects .sections-projects");
 
@@ -182,4 +183,64 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   addProjects();
+
+  const certificatesData = [
+    {
+      title: "Desenvolvimento Web",
+      organization: "Udemy   -   Março de 2022",
+      imageSrc: "./assets/img/udemy-logo.png",
+      skills: "Competências: HTML · CSS · JavaScript · BootStrap · PHP · MySQL",
+    },
+    {
+      title: "Java Script - Básico ao Avançado",
+      organization: "Udemy   -   Março de 2022",
+      imageSrc: "./assets/img/udemy-logo.png",
+      skills: "Competências: JavaScript · Node.js",
+    },
+    {
+      title: "Semana OmniStack 11",
+      organization: "RocketSeat   -   Março de 2020",
+      imageSrc: "./assets/img/logo-rockeatseat.png",
+      skills: "Competências: Node.js · React.Js · React Native",
+    },
+    {
+      title: "Monitor(a) do minicurso de Programação em Python",
+      organization: "IFBA (WeekIT)   -   Dezembro de 2018",
+      imageSrc: "./assets/img/ifba-logo.png",
+      skills: "Competências: Python",
+    },
+    {
+      title: "Curso de POO Java",
+      organization: "Curso em Video   -   Dezembro de 2018",
+      imageSrc: "./assets/img/cursoemvideo-logo.png",
+      skills: "Competências: Java · Programação Orientada a Objeto",
+    },
+    {
+      title: "Curso Segurança da Informação",
+      organization: "Unieducar   -   Maio de 2017",
+      imageSrc: "./assets/img/logo-unieducar.png",
+      skills: "Competências: Certificação Digital · Segurança",
+    },
+    
+  ];
+
+
+  function addCertificates() {
+    const certificatesContainer = document.querySelector("#certificates .sections-certificates");
+
+    certificatesData.forEach((certificate) => {
+       const template = document.getElementById("certificate-template").cloneNode(true);
+       template.removeAttribute("id");
+ 
+       template.querySelector(".certificate-title").textContent = certificate.title;
+       template.querySelector(".certificate-organization").textContent = certificate.organization;
+       template.querySelector(".certificate-skills").textContent = certificate.skills;
+       template.querySelector(".certificate-image").src = certificate.imageSrc;
+
+       template.style.display = "block";
+       certificatesContainer.appendChild(template);
+    });
+  }
+
+  addCertificates();
 });

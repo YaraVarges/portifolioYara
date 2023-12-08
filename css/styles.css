@@ -72,7 +72,8 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .section-header h2 {
@@ -101,15 +102,15 @@ section {
   margin-top: 20px;
 }
 
-.projects {
+.projects, .certificates {
   padding: 1rem;
 }
 
-.projects-div {
+.projects-div, .certificates-div {
   padding-bottom: 2rem;
 }
 
-.projects-item {
+.projects-item, .certificates-item {
   text-align: justify;
 }
 
@@ -118,7 +119,7 @@ section {
   justify-content: center;
 }
 
-.sections-projects {
+.sections-projects, .sections-certificates {
   display: flex!important;
   align-items: center;
   width: 100%;
@@ -127,8 +128,17 @@ section {
   flex-wrap: wrap;
 }
 
-section #contact {
-  background-color: #F4F1E8 !important;
+.certificate-image {
+  margin-right: 10px;
+}
+
+.certificates-item p{
+  margin-left: 40px;
+}
+
+.certificates-item h3{
+  margin-left: 40px;
+  margin-top: -45px;
 }
 
 .contact .info-container {
