@@ -20,7 +20,6 @@ Meu portfólio pessoal destacando projetos e habilidades em desenvolvimento web.
 
 ## Contato
 - Email: varges98@gmail.com
-- GitHub: [YaraVarges](https://github.com/YaraVarges)
 - LinkedIn: [Yara Varges](https://www.linkedin.com/in/yara-varges-523887144/)
 
   
