@@ -16,6 +16,7 @@ body {
   color: var(--color-default);
 }
 
+
 a, a:hover {
   color: var(--color-default);
   text-decoration: none;

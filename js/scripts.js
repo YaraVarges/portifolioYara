@@ -140,23 +140,28 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: "Votos & Versos",
       description: "Site do grupo musical Votos & Versos. Uma celebração da arte musical que combina votos de amor com versos envolventes. Divulgação de agenda, eventos e videos de perfomances.",
-      imageSrc: "./assets/img/site-votoseversos-desktop.png"
+      imageSrc: "./assets/img/site-votoseversos-desktop.png",
+      linkProject: "https://yaravarges.github.io/votoseversos-site/"
     },
     {
       title: "AmiCrochês",
       description: "Site AmiCrochês, sobre o universo dos amigurumis. Explora sobre pelúcias feitas à mão, onde cada ponto se transforma em personagens adoráveis e coloridos.",
-      imageSrc: "./assets/img/site-amicroches-desktop.png"
+      imageSrc: "./assets/img/site-amicroches-desktop.png",
+      linkProject: "https://yaravarges.github.io/amicroches-site/"
+    },
+    {
+      title: "Rick and Morty Dex",
+      description: "Projeto desenvolvido durante o curso da DIO. Um catálogo de personagens do multiverso Rick and Morty, explorando diversas características dos personagens.",
+      imageSrc: "./assets/img/site-rickandmorty-desktop.png",
+      linkProject: "https://yaravarges.github.io/rick-morty/"
     },
     {
       title: "Gerador de Senhas",
       description: "Site que cria senhas robustas com facilidade, garantindo a proteção de suas contas online. Além disso, simplifique a geração de códigos QR personalizados para diversas finalidades.",
-      imageSrc: "./assets/img/site-geradorsenha-desktop.png"
+      imageSrc: "./assets/img/site-geradorsenha-desktop.png",
+      linkProject: "https://yaravarges.github.io/utilitario/senhas/index.html"
     },
-    {
-      title: "Site Museu",
-      description: "Site do museu nacional, desenvolvido como treinamento e estudo de curso de Programação. Desenvolvido em HTML e CSS uma replica do site do museu nacional.",
-      imageSrc: "./assets/img/site-museu-desktop.png"
-    },
+    
   ];
 
   function addProjects() {
@@ -169,6 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
        template.querySelector(".project-title").textContent = project.title;
        template.querySelector(".project-description").textContent = project.description;
        template.querySelector(".project-image").src = project.imageSrc;
+       template.querySelector(".project-link").href = project.linkProject;
 
        template.style.display = "block";
        projectContainer.appendChild(template);
